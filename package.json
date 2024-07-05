@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "start:prod": "tsx ./dist/server.js",
+    "start:prod": "node ./dist/server.js",
     "lint": "eslint src --ext .ts",
     "lint:fix": "npx eslint src --fix",
     "dev": "tsx src/server.ts",
