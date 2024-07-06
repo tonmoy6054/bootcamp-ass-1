@@ -14,7 +14,7 @@ const OrderSchema = new Schema<Order>(
     price: { type: Number, required: true },
     quantity: { type: Number, required: true },
   },
-  { timestamps: true }
+  { timestamps: true },
 )
 
 export const OrderModel = model<Order>('Order', OrderSchema)

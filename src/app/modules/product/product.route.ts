@@ -11,13 +11,13 @@ router.get('/products/:productId', productControllers.getSingleProduct)
 router.post(
   '/products',
   validateRequest(ProductSchema),
-  productControllers.createProduct
+  productControllers.createProduct,
 )
 
 router.delete('/products/:productId', productControllers.deleteProduct)
 router.put(
   '/products/:productId',
   validateRequest(ProductSchema),
-  productControllers.updateProduct
+  productControllers.updateProduct,
 )
 export const ProductRoutes = router

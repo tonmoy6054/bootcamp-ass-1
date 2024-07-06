@@ -40,7 +40,7 @@ const ProductSchema = new Schema<Product>(
     variants: { type: [VariantSchema], required: true },
     inventory: { type: InventorySchema, required: true },
   },
-  { timestamps: true }
+  { timestamps: true },
 )
 
 export const ProductModel = model<Product>('Product', ProductSchema)

@@ -1,5 +1,3 @@
-import mongoose from 'mongoose'
-
 import { Order, OrderModel } from './order.model'
 import { ProductModel } from '../product.model'
 
@@ -18,7 +16,7 @@ const createOrderIntoDb = async (order: Order) => {
     console.log(
       'Insufficient quantity available:',
       product.inventory.quantity,
-      order.quantity
+      order.quantity,
     )
     throw new Error('Insufficient quantity available in inventory')
   }

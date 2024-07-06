@@ -11,7 +11,7 @@ router.get('/orders', validateRequest(emailSchema), orderControllers.getOrders)
 router.post(
   '/orders',
   validateRequest(OrderSchema),
-  orderControllers.createOrder
+  orderControllers.createOrder,
 )
 
 export const OrderRoutes = router

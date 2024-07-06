@@ -14,7 +14,7 @@ const createOrder = async (req: Request, res: Response) => {
       message: 'Order created successfully!',
       data: result,
     })
-  } catch (error: any) {
+  } catch (error) {
     console.error('Error creating order:', error)
     if (error.message === 'Insufficient quantity available in inventory') {
       res.status(400).json({
@@ -54,7 +54,7 @@ const getOrders = async (req: Request, res: Response) => {
         : 'All orders fetched successfully!',
       data: orders,
     })
-  } catch (error: any) {
+  } catch (error) {
     console.error('Error fetching orders:', error)
     res.status(500).json({
       success: false,
