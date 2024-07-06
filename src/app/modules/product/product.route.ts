@@ -2,7 +2,7 @@ import express from 'express'
 import { productControllers } from './product.controller'
 
 import { ProductSchema } from './product.validation'
-import { validateRequest } from '../../../../src/middlewares/validateRequest'
+import { validateRequest } from '@middlewares/validateRequest'
 
 const router = express.Router()
 router.get('/products', productControllers.searchProducts)

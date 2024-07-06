@@ -8,7 +8,10 @@
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
     "moduleResolution": "node",
-    "baseUrl": "."
+    "baseUrl": "./src",
+    "paths": {
+      "@middlewares/*": ["middlewares/*"]
+    }
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]
