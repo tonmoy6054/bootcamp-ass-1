@@ -1,17 +1,17 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "node",
+    "module": "commonjs",
     "esModuleInterop": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
     "outDir": "./dist",
     "rootDir": "./src",
-    "baseUrl": "./src",
+    "moduleResolution": "node",
+    "baseUrl": ".",
     "paths": {
-      "src/*": ["*"]
+      "@middlewares/*": ["./src/middlewares/*"]
     }
   },
   "include": ["src"],

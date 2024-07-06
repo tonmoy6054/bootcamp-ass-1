@@ -105,11 +105,7 @@ const updateProduct = async (req: Request, res: Response) => {
   try {
     const productId = req.params.productId
     const updatedData = req.body
-    console.log(
-      `Updating product with id: ${productId} with data: ${JSON.stringify(
-        updatedData,
-      )}`,
-    )
+
     const result = await productServices.updateProductInDb(
       productId,
       updatedData,

@@ -3,7 +3,7 @@ import express from 'express'
 import { orderControllers } from './order.controller'
 
 import { OrderSchema, emailSchema } from './order.validation'
-import { validateRequest } from '../../../../src/middlewares/validateRequest'
+import { validateRequest } from '../../../middlewares/validateRequest'
 
 const router = express.Router()
 
