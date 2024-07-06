@@ -1,17 +1,20 @@
 {
-  "type": "commonjs",
+  "type": "module",
   "name": "bcpro-1",
   "version": "1.0.0",
   "main": "dist/server.js",
   "scripts": {
     "build": "tsc",
-    "start:prod": "node dist/server.js",
+    "start:prod": "tsx src/server.ts",
     "lint": "eslint src --ext .ts",
     "lint:fix": "npx eslint src --fix",
     "dev": "tsx src/server.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prettier": "prettier --ignore-path .gitignore --write \"./src/**/*.+(js|ts|json)\"",
     "prettier:fix": "npx prettier --write src"
+  },
+  "_moduleAliases": {
+    "src": "dist/src"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +25,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
+    "module-alias": "^2.2.3",
     "mongoose": "^8.4.4",
     "zod": "^3.23.8"
   },
